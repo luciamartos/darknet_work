@@ -99,7 +99,7 @@ The last convolutional layer has 10 filters because we have 10 classes. It outpu
 		bus<br />
 6. Edit the yolo.c file: change the paths of the trainning images and back up director.
 7. Put training data in the path specified, requires image.jpg and image.txt with the annotations in the format <object-class> <x> <y> <width> <height>, where everything is in ratios
-8. Download some pre trained weights to use - this can be a randomised file of the correct size.
+8. Download http://pjreddie.com/media/files/darknet19_448.conv.23 (pre trained weights, note this can be a randomised file of the correct size)
 9. Re-make darknet again (run “make” on terminal)
 10. RUN: ./darknet detector train cfg/voc.data cfg/yolo-voc.cfg darknet19_448.conv.23  (clearly use the correct names for the files which you created!)<br />
 ./darknet detector train data/obj.data cfg/yolo-voc.cfg darknet19_448.conv.23  (clearly use the correct names for the files which you created!)<br />
@@ -108,6 +108,7 @@ The last convolutional layer has 10 filters because we have 10 classes. It outpu
 Please run the following lines:<br />
 git clone XXXXX<br />
 cd darknet_work<br />
+DOWNLOAD http://pjreddie.com/media/files/darknet19_448.conv.23  and put in directory<br />
 make<br />
 RUN: ./darknet detector train data/obj.data cfg/yolo-voc.cfg darknet19_448.conv.23 <br />
 Note!!! If it does not work it is because the specified paths are linked to my computer so you might need to edit files like obj.data to update the paths (this should be very simple)<br />
