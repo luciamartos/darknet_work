@@ -1,0 +1,5 @@
+classes= 2
+train  = /Users/LuciaMartos/Documents/workspace_IVI/darknet_work/data/train.txt
+valid  = test.txt
+names = obj.names
+backup = backup/
